@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <style>
+            * {
+                font-family: system-ui;
+            }
+
+            .header {
+                text-align: center;
+            }
+
+            .rss {
+                border: 5px dashed red;
+                border-radius: 10px;
+                padding: 10px;
+                margin: 10px;
+                color: red;
+                font-weight: bold;
+                text-wrap: auto;
+            }
+
+            @media (min-width: 600px) {
+                .ressources {
+                    display: grid;
+                    grid-template-columns: repeat(2, 1fr);
+                    gap: 10px;
+                }
+            }
+        </style>
+        <title>Monitoring Hippo</title>
+    </head>
+    <body>
+        <h1 class="header">Monitoring Hippo</h1>
+        <h2>Dernière alerte CERT-FR</h2>
+        <pre class="rss">{{ rss_texte }}</pre>
+        <h2>Consommation des ressources</h2>
+        <div class="ressources">
+            {% for graphique in graphiques_ressources %}
+            <img src="{{ graphique }}" />
+            {% endfor %}
+        </div>
+    </body>
+</html>

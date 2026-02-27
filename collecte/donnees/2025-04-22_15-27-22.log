@@ -1,0 +1,9 @@
+Suppression du fichier: ./collecte/donnees/2025-04-10_09-02-56.csv
+Suppression du fichier: ./collecte/donnees/2025-04-10_09-02-56.log
+Début de la collecte.
+Collecte de la sonde : ./collecte/sondes/disque.sh
+Collecte de la sonde : ./collecte/sondes/processeur.py
+Collecte de la sonde : ./collecte/sondes/processus.sh
+Collecte de la sonde : ./collecte/sondes/ram.py
+Collecte de la sonde : ./collecte/sondes/users.sh
+Fin de la collecte.
