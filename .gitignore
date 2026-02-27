@@ -18,5 +18,3 @@ collecte/donnees/*.log
 # Env secrets
 .env
 .env.*
-# Optional: keep rss.txt if it's generated
-# collecte/donnees/rss.txt

@@ -8,14 +8,12 @@ import pygal
 app = Flask(__name__)
 
 def actualite_rss():
-    # Récupère la dernière actualité RSS enregistrée dans un fichier
 
     fichier_rss = './collecte/donnees/rss.txt'
     with open(fichier_rss, 'r') as f:
         return f.read()
 
 def donnees_dernier_sondages():
-    # Trouve et lis le dernier fichier CSV situé dans ./collecte/donnees/
     dossier = "./collecte/donnees/"
     # Récupère tous les fichiers .csv dans le dossier
     fichiers_csv = glob.glob(os.path.join(dossier, "*.csv"))
