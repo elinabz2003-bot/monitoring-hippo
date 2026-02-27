@@ -1,0 +1,22 @@
+# Virtual env
+.venv/
+venv/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# OS files
+.DS_Store
+
+# Logs / data generated
+*.log
+collecte/donnees/*.csv
+collecte/donnees/*.log
+
+# Env secrets
+.env
+.env.*
+# Optional: keep rss.txt if it's generated
+# collecte/donnees/rss.txt
